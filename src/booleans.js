@@ -1,61 +1,66 @@
 function negate(a) {
-  // your code here
+  return !a;
 };
 
 function both(a, b) {
-  // your code here
+  return a && b == true;
 };
 
 function either(a, b) {
-  // your code here
+  return a || b == true;
 };
 
 function none(a, b) {
-  // your code here
+  return !(a || b) == true;
 };
 
 function one(a, b) {
-  // your code here
+  return (a ^ b) == true;
 };
 
 function truthiness(a) {
-  // your code here
+  return Boolean(a);
 };
 
 function isEqual(a, b) {
-  // your code here
+  return (a === b) == true;
 };
 
 function isGreaterThan(a, b) {
-  // your code here
+  return (a > b) === true;
 };
 
 function isLessThanOrEqualTo(a, b) {
-  // your code here
+  return (a <= b) === true;
 };
 
 function isOdd(a) {
-  // your code here
+  return a % 2 == true;
 };
 
 function isEven(a) {
-  // your code here
+  return (a % 2 === 0) == true;
 };
 
 function isSquare(a) {
-  // your code here
+  return (Math.sqrt(a) % 1 === 0 )== true;
 };
 
 function startsWith(char, string) {
-  // your code here
+  return string.startsWith(char) == true;
 };
 
 function containsVowels(string) {
-  // your code here
+  return string.toLowerCase().includes('a') || 
+         string.toLowerCase().includes('e') ||
+         string.toLowerCase().includes('i') ||
+         string.toLowerCase().includes('o') ||
+         string.toLowerCase().includes('u') == true;
+  // return string.toLowerCase().includes['a' || 'e' || 'i' || 'o' || 'u'] == true;
 };
 
 function isLowerCase(string) {
-  // your code here
+  return (string === string.toLowerCase()) == true;
 };
 
 module.exports = {

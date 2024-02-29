@@ -1,25 +1,30 @@
-function sayHello (string) {
-  // your code here
-};
+function sayHello(string) {
+  return ("Hello, " + string + "!")
+}
+
+  // const prompt = require('prompt-sync')();
+  
+  // const text = prompt('Type the string here: ');
+  // console.log('Hello ' + text + '!');
 
 function uppercase (string) {
-  // your code here
+  return string.toUpperCase();
 };
 
 function lowercase (string) {
-  // your code here
+  return string.toLowerCase();
 };
 
 function countCharacters (string) {
-  // your code here
+  return string.length;
 };
 
 function firstCharacter (string) {
-  // your code here
+  return string.charAt(0);
 };
 
 function firstCharacters (string, n) {
-  // your code here
+  return string.slice(0, n);
 };
 
 module.exports = {
