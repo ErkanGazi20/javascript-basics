@@ -54,7 +54,7 @@ const removeSpaces = string => {
 };
 
 const sumNumbers = numbers => {
-  return numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0)
+  return numbers.reduce((acc, currentValue) => acc + currentValue, 0)
 };
 
 const sortByLastLetter = strings => {
